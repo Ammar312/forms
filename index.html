@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+       <p><h3><label for="username"> Name </label></h3>
+         <input type="text" id="username" name="name" maxlength="30" placeholder="Student name" required="required"/></p>
+       <p><h3><label for="email">Email</label></h3>
+         <input type="text" id="email" name="email" placeholder="123@gmail.com" required="required"/>
+       </p>
+       <p><h3><label for="password">Passsword</label></h3>
+         <input type="password" id="password" name="password" minlength="5" maxlength="12" required="required" />
+       </p>
+       <p><h3>Gender</h3>
+       <input type="radio" name="gender" value="male" id="male" checked="checked"/> <label for="male">Male</label>
+       <input type="radio" name="gender" value="female" id="female"/> <label for="female">Female</label>
+       </p>
+       <h3>Course Name</h3>
+       <select name="courses" >
+       <option value="graphicdesign" id="graphics"><label for="graphics">Graphic Designing</label></option>
+       <option value="aiandds" id="aiandds"><label for="aiandds">AI and DataScience</label></option>
+       <option value="aichatbot" id="aichatbot"><label for="aichatbot">AI Chatbot</label></option>
+       <option value="webandappdevelopment" id="webandapp"><label for="webandapp">Mobile App and Web Development</label></option>
+    </select>
+       <h3><label for="batch">Batch No</label></h3>
+       <input type="text" name="classname" id="batch" size="4"/>
+
+       <p>
+        <h3><label for="teacher">Instructor</label></h3>
+        <input type="text" name="instructor" id="teacher" placeholder="Short-answer text"/>
+    </p>
+    <h3>Level of Effort</h3>
+    <p>level of effort... 
+ <input type="radio" name="effort" value="excellent" checked="checked" id="excellent"><label for="excellent">Excellent</label>
+ <input type="radio" name="effort" value="verygood" id="vgood"/><label for="vgood">Very Good</label>
+ <input type="radio" name="effort" value="satisfactory" id="satisfact"/><label for="satisfact">Satisfactory</label>
+ <input type="radio" name="effort" value="fair" id="fair"/><label for="fair">Fair</label>
+ <input type="radio" name="effort" value="poor" id="poor"/><label for="poor">Poor</label>
+    </p>
+    <h4><label for="useful">What aspects of this course were most useful or valuable?</label></h4>
+    <input type="text" name="question" id="useful" placeholder="Long-answer text" size="30"/>
+
+    <h4><label for="improve">How would you improve this course?</label></h4>
+    <input type="text" name="question" id="improve" placeholder="Long-answer text" size="29"/>
+
+    <h4>Why did you choose this course?</h4>
+    <p>  
+    <input type="radio" name="choice" value="degree" id="requirement"/><label for="requirement"> Degree Requirement</label>  
+    </p>
+
+    <p>  
+    <input type="radio" name="choice" value="time" id="offer"/><label for="offer"> Time Offered</label>  
+    </p>
+    <p>  
+    <input type="radio" name="choice" value="interest" id="third"/><label for="third"> Interest</label>  
+    </p>
+
+    <h4>Upload a Image</h4>
+    <input type="file" name="image"/>
+
+    <p><input type="submit" name="submit" value="Submit">
+    </p>    
+
+</form>
+</body>
+</html>
